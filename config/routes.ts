@@ -358,21 +358,21 @@ const baseRoutes = [
         selectedIcon: 'icon-usage-filled',
         defaultIcon: 'icon-usage-outlined',
         component: './usage/index'
-      },
-      {
-        name: 'billing',
-        path: '/usage/billing',
-        key: 'billing',
-        icon: 'icon-billing-outlined',
-        selectedIcon: 'icon-billing-filled',
-        defaultIcon: 'icon-billing-outlined',
-        hideInMenu: process.env.ENABLE_ENTERPRISE === 'true',
-        // OSS exposes the menu as a teaser for the enterprise billing
-        // module. The page itself just renders an upsell notice — the real
-        // billing UI lives in the enterprise plugin and shadows this route
-        // via `routes.extensions.ts`.
-        component: './billing'
       }
+      // {
+      //   name: 'billing',
+      //   path: '/usage/billing',
+      //   key: 'billing',
+      //   icon: 'icon-billing-outlined',
+      //   selectedIcon: 'icon-billing-filled',
+      //   defaultIcon: 'icon-billing-outlined',
+      //   hideInMenu: process.env.ENABLE_ENTERPRISE === 'true',
+      //   // OSS exposes the menu as a teaser for the enterprise billing
+      //   // module. The page itself just renders an upsell notice — the real
+      //   // billing UI lives in the enterprise plugin and shadows this route
+      //   // via `routes.extensions.ts`.
+      //   component: './billing'
+      // }
     ]
   },
   {
@@ -384,20 +384,20 @@ const baseRoutes = [
         path: '/access-control',
         redirect: '/access-control/users'
       },
-      {
-        name: 'organizations',
-        path: '/access-control/organizations',
-        key: 'organizations',
-        icon: 'icon-org-outlined',
-        selectedIcon: 'icon-org-filled',
-        defaultIcon: 'icon-org-outlined',
-        // OSS exposes the menu to platform admins as a teaser for the
-        // enterprise multi-tenancy module. The page itself just renders
-        // an upsell notice — the real CRUD UI lives in the enterprise
-        // plugin and shadows this route via `routes.extensions.ts`.
-        access: 'canSeeAdmin',
-        component: './organizations'
-      },
+      // {
+      //   name: 'organizations',
+      //   path: '/access-control/organizations',
+      //   key: 'organizations',
+      //   icon: 'icon-org-outlined',
+      //   selectedIcon: 'icon-org-filled',
+      //   defaultIcon: 'icon-org-outlined',
+      //   // OSS exposes the menu to platform admins as a teaser for the
+      //   // enterprise multi-tenancy module. The page itself just renders
+      //   // an upsell notice — the real CRUD UI lives in the enterprise
+      //   // plugin and shadows this route via `routes.extensions.ts`.
+      //   access: 'canSeeAdmin',
+      //   component: './organizations'
+      // },
       {
         name: 'users',
         path: '/access-control/users',
