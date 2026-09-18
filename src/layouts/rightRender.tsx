@@ -280,7 +280,6 @@ export const getRightRenderContent = (opts: {
 
   return (
     <>
-      <Menu {...helpMenu} mode="vertical" />
       <Menu {...userMenu} mode="vertical" />
     </>
   );

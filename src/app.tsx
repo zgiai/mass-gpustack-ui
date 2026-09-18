@@ -20,6 +20,7 @@ import {
   markInitialStateProbed,
   probeAccessFlags
 } from '@/utils/access-probes';
+import { BYPASS_AUTH } from '@/utils/bypass-auth';
 import { installTenantFetch } from '@/utils/install-fetch';
 import {
   IS_FIRST_LOGIN,
@@ -138,7 +139,9 @@ export async function getInitialState(): Promise<{
           duration: 5
         });
       }
-      history.push(DEFAULT_ENTER_PAGE.login);
+      if (!BYPASS_AUTH) {
+        history.push(DEFAULT_ENTER_PAGE.login);
+      }
     }
     return {} as Global.UserInfo;
   };

@@ -18,7 +18,6 @@ import { useAtom } from 'jotai';
 import { useMemo } from 'react';
 import styled from 'styled-components';
 import { DEFAULT_ENTER_PAGE } from '../config/settings';
-import GithubStar from './github-star';
 
 // A tinted pill, not a solid orange block. `#fff` on `--ant-orange-5` measured
 // 1.91:1 — the one element on the page whose whole job is to be noticed was the
@@ -350,7 +349,6 @@ export const ExtraContent = (props: { isDarkTheme?: boolean }) => {
     <Wrapper>
       {contextHolder}
       <PluginExtraField name="OrgSwitcher" isDarkTheme={isDarkTheme} />
-      {process.env.ENABLE_ENTERPRISE !== 'true' && <GithubStar />}
       <div
         style={{
           display: 'flex',
@@ -375,24 +373,7 @@ export const ExtraContent = (props: { isDarkTheme?: boolean }) => {
           </NewLabel>
         )}
       </div>
-      {!plugin && (
-        <DropdownActions
-          menu={{ ...helpMenu }}
-          popupRender={helpPopupRender}
-          trigger={['hover', 'click']}
-        >
-          <IconWrapper
-            type="button"
-            aria-label={intl.formatMessage({ id: 'common.button.help' })}
-          >
-            {/* No colour override: it inherits `IconWrapper`'s
-                `text-secondary`, same as the user glyph. `text-tertiary`
-                measured 3.36:1 in light mode — barely over the 3:1 graphic
-                floor, and it read as a hint rather than an action. */}
-            <IconFont type="icon-help" className="font-size-16" />
-          </IconWrapper>
-        </DropdownActions>
-      )}
+
       <PluginExtraField name="GlobalSettings" />
       <DropdownActions
         menu={{ ...userMenu }}

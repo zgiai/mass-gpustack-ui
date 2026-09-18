@@ -1,5 +1,6 @@
 import { userAtom } from '@/atoms/user';
 import { clearAtomStorage } from '@/atoms/utils';
+import { BYPASS_AUTH } from '@/utils/bypass-auth';
 import { history, RequestConfig } from '@umijs/max';
 import { message } from 'antd';
 import { DEFAULT_ENTER_PAGE } from './config/settings';
@@ -29,7 +30,7 @@ export const requestConfig: RequestConfig = {
           content: <ErrorMessageContent errMsg={errMsg}></ErrorMessageContent>
         });
       }
-      if (response?.status === 401) {
+      if (response?.status === 401 && !BYPASS_AUTH) {
         clearAtomStorage(userAtom);
 
         history.push(DEFAULT_ENTER_PAGE.login, { replace: true });

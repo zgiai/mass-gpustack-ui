@@ -1,6 +1,5 @@
 import { GPUStackVersionAtom } from '@/atoms/user';
 import VersionInfo, { modalConfig } from '@/components/version-info';
-import externalLinks from '@/constants/external-links';
 import { useIntl } from '@umijs/max';
 import { Button, Divider, Modal, Typography } from 'antd';
 import { createStyles } from 'antd-style';
@@ -55,23 +54,11 @@ const Footer: React.FC = () => {
               <CompanyWrapper>
                 <span>&copy;</span>
                 <span> {new Date().getFullYear()}</span>
-                <Typography.Link
-                  href="https://gpustack.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Typography.Link target="_blank" rel="noopener noreferrer">
                   {intl.formatMessage({ id: 'settings.company' })}
                 </Typography.Link>
               </CompanyWrapper>
-              <Divider orientation="vertical" />
-              <Button
-                type="link"
-                size="small"
-                href={externalLinks.documentation}
-                target="_blank"
-              >
-                {intl.formatMessage({ id: 'common.button.help' })}
-              </Button>
+
               <Divider orientation="vertical" />
               <Button type="link" size="small" onClick={showVersion}>
                 {version?.version}

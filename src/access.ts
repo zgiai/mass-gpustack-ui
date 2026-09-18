@@ -1,3 +1,4 @@
+import { BYPASS_AUTH } from '@/utils/bypass-auth';
 import { applyAccessExtensions } from './access.extensions';
 
 export default (initialState: {
@@ -43,6 +44,20 @@ export default (initialState: {
   //     the caller is admin of it.
   // Pass through `applyAccessExtensions` so build-time tooling can
   // widen these without editing this file. Default is a no-op.
+  // Local dev escape hatch: when `BYPASS_AUTH=true`, every page is accessible
+  // regardless of the current user's role/API permissions.
+  if (BYPASS_AUTH) {
+    return applyAccessExtensions({
+      canSeeAdmin: true,
+      canSeeOrgAdmin: true,
+      canSeeGpuService: true,
+      canManageCurrentOrg: true,
+      canSeeUser: true,
+      canDelete: true,
+      canLogin: true
+    });
+  }
+
   return applyAccessExtensions({
     canSeeAdmin: isPlatformAdmin,
     canSeeOrgAdmin: isPlatformAdmin,

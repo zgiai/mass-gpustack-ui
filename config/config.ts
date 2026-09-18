@@ -20,7 +20,8 @@ export default defineConfig({
     type: 'hash'
   },
   define: {
-    'process.env.ENABLE_ENTERPRISE': process.env.ENABLE_ENTERPRISE
+    'process.env.ENABLE_ENTERPRISE': process.env.ENABLE_ENTERPRISE,
+    'process.env.BYPASS_AUTH': process.env.BYPASS_AUTH
   },
   analyze: {
     analyzerMode: 'server',

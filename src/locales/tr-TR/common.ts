@@ -218,7 +218,7 @@ export default {
   'common.form.password': 'Şifre',
   'common.form.username': 'Kullanıcı adı',
   'common.login.rember': 'Beni hatırla',
-  'settings.company': 'GPUStack.ai',
+  'settings.company': 'Mass-GPUStack',
   'common.button.help': 'Yardım',
   'common.button.feedback': 'Geri Bildirim',
   'common.button.docs': 'Dokümantasyon',
