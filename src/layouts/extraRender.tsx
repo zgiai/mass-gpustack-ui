@@ -8,7 +8,6 @@ import { useModel } from '@@/plugin-model';
 import {
   DiscordOutlined,
   GithubOutlined,
-  HomeOutlined,
   ReadOutlined
 } from '@ant-design/icons';
 import { DropdownActions, IconFont, useBodyScroll } from '@gpustack/core-ui';
@@ -246,12 +245,6 @@ export const ExtraContent = (props: { isDarkTheme?: boolean }) => {
   };
 
   const helpList = [
-    {
-      key: 'site',
-      icon: <HomeOutlined />,
-      label: 'GPUStack',
-      url: externalLinks.site
-    },
     {
       key: 'github',
       icon: <GithubOutlined />,

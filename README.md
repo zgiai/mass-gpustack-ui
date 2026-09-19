@@ -1,3 +1,5 @@
+> **Note — Modified Distribution:** This repository contains **ZGP UI**, a fork of [gpustack-ui](https://github.com/gpustack/gpustack) (Apache License 2.0) with rebranded product names and logos. It is not an official GPUStack release. See [NOTICE](NOTICE) for attribution and modification details.
+
 # GPUStack UI
 
 UI for [GPUStack](https://github.com/gpustack/gpustack).

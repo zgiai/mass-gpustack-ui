@@ -1,0 +1,38 @@
+ZGP UI
+Copyright 2026 ZGP Authors
+
+This product is based on gpustack-ui / GPUStack (https://github.com/gpustack/gpustack),
+licensed under the Apache License, Version 2.0.
+
+   Copyright 2024 The GPUStack authors
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+Modifications
+-------------
+This distribution has been modified from the original gpustack-ui source code.
+Modifications include, but are not limited to: rebranding of user-visible
+product names, logos, favicons, page titles, interface copy (all locales), and
+footer attribution from "GPUStack" to "ZGP". Modified files are not
+individually annotated; the complete set of changes is tracked in this
+repository's version control history.
+
+The upstream LICENSE file is retained unmodified and attributes the original
+copyright to The GPUStack authors, as required by the Apache License 2.0.
+
+Trademarks
+----------
+"GPUStack" is a trademark of its respective owners. This distribution does
+not claim any affiliation with, endorsement by, or sponsorship from the
+GPUStack project or its maintainers. All references to GPUStack in this
+distribution are solely for attribution purposes as required by the license.

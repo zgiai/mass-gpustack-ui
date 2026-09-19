@@ -4,7 +4,6 @@ import externalLinks from '@/constants/external-links';
 import {
   DiscordOutlined,
   GithubOutlined,
-  HomeOutlined,
   InfoCircleOutlined,
   LogoutOutlined,
   MoreOutlined,
@@ -79,12 +78,6 @@ export const getRightRenderContent = (opts: {
   }
 
   const helpList = [
-    {
-      key: 'site',
-      icon: <HomeOutlined />,
-      label: 'GPUStack',
-      url: externalLinks.site
-    },
     {
       key: 'github',
       icon: <GithubOutlined />,

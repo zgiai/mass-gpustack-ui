@@ -1,4 +1,4 @@
-import Logo from '@/assets/images/gpustack-logo.png';
+import Logo from '@/assets/images/zgp-logo.png';
 import { GPUStackVersionAtom, UpdateCheckAtom, userAtom } from '@/atoms/user';
 import externalLinks from '@/constants/external-links';
 import { useLogo } from '@/hooks/use-logo';

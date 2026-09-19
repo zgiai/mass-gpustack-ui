@@ -4,7 +4,7 @@ export default {
   'kvCache.providerSelect.title': 'Sağlayıcı Seç',
   'kvCache.provider.source.builtin': 'Built-in',
   'kvCache.provider.source.community': 'Community',
-  'kvCache.provider.source.partner': 'GPUStack Sertifikalı İş Ortağı',
+  'kvCache.provider.source.partner': 'ZGP Sertifikalı İş Ortağı',
   'kvCache.button.testConnection': 'Bağlantıyı Test Et',
   'kvCache.button.viewLogs': 'Günlükleri Görüntüle',
   'kvCache.edit.recreate.tips':

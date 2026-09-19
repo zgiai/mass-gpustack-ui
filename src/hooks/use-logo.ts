@@ -1,5 +1,7 @@
-import GpustackLogo from '@/assets/images/gpustack-logo.png';
-import SmallLogo from '@/assets/images/small-logo-200x200.png';
+import ZGPLogoDark from '@/assets/images/zgp-logo-dark.png';
+import ZGPLogo from '@/assets/images/zgp-logo.png';
+import ZGPMiniDark from '@/assets/images/zgp-mini-dark.png';
+import ZGPMini from '@/assets/images/zgp-mini.png';
 import useUserSettings from '@/hooks/use-user-settings';
 import { getGPUStackPlugin } from '@/plugins';
 
@@ -11,8 +13,8 @@ const useLogo = () => {
     enterprisePlugin?.branding?.resolveLogos?.(userSettings, isDarkTheme) ?? {};
 
   return {
-    sidebarLogo: resolved.sidebarLogo || GpustackLogo,
-    miniLogo: resolved.miniLogo || SmallLogo
+    sidebarLogo: resolved.sidebarLogo || (isDarkTheme ? ZGPLogoDark : ZGPLogo),
+    miniLogo: resolved.miniLogo || (isDarkTheme ? ZGPMiniDark : ZGPMini)
   };
 };
 

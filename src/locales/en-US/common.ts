@@ -216,7 +216,7 @@ export default {
   'common.form.password': 'Password',
   'common.form.username': 'Username',
   'common.login.rember': 'Remember me',
-  'settings.company': 'GPUStack',
+  'settings.company': 'ZGP',
   'common.button.help': 'Help',
   'common.button.feedback': 'Feedback',
   'common.button.docs': 'Documentation',
